@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mostar city</title>
+<meta name="description" content="A cinematic three-screen scroll story for Mostar city." />
+<link rel="icon" href="data:," />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Inline SVG icon sprite (stroke style, currentColor) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="icon-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="icon-landmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></symbol>
+    <symbol id="icon-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 4.5 4h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  </defs>
+</svg>
+
+<main class="site-shell">
+  <section class="cinema-scroll" id="cinema" aria-label="Mostar cinematic scroll story">
+    <div class="stage">
+      <div class="world">
+        <img class="scene-img sky-img" src="https://raft-blast-61784561.figma.site/_assets/v11/16b5007d9c93971e26ffe4e0e3e37946f6bd538c.png" alt="" />
+
+        <header class="site-header" aria-label="Primary navigation">
+          <a class="site-logo" href="#cinema" data-i18n="logo">Bosnia and Herzegovina</a>
+          <nav class="site-nav" aria-label="Main menu">
+            <a href="#cinema" data-i18n="navIntro">Intro</a>
+            <a href="#bridge" data-i18n="navBridge">Bridge</a>
+            <a href="#bazaar" data-i18n="navBazaar">Bazaar</a>
+            <a href="#routes" data-i18n="navRoutes">Routes</a>
+          </nav>
+          <button class="language-switcher" id="langSwitcher" aria-label="Change language">
+            <span id="langLabel">EN</span>
+            <svg class="icon icon-sm" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+          </button>
+        </header>
+
+        <div class="back-stack">
+          <img class="scene-img back-img back-four" src="https://raft-blast-61784561.figma.site/_assets/v11/8a7f8af50e0ce92ec2e228e7b0b4112178c51cf1.png" alt="" />
+
+          <section class="sights-slider" aria-label="Mostar sights slider">
+            <div class="sights-track">
+              <article class="sight-card" tabindex="0" role="button" aria-label="Open Stari Most card">
+                <span class="sight-kicker" data-i18n="kicker1">Old Bridge</span>
+                <img class="sight-pin" src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260730_230438_d526b8b6-8a2e-4e3b-9993-3908acae03a7.png" alt="" />
+                <h3 data-i18n="title1">Stari Most</h3>
+                <p data-i18n="desc1">The stone arch over the Neretva and Mostar's main landmark.</p>
+              </article>
+              <article class="sight-card" tabindex="0" role="button" aria-label="Open Kujundziluk card">
+                <span class="sight-kicker" data-i18n="kicker2">Bazaar Street</span>
+                <img class="sight-pin" src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260730_230442_140bc25b-b165-4249-904a-f708bff6970e.png" alt="" />
+                <h3 data-i18n="title2">Kujundziluk</h3>
+                <p data-i18n="desc2">Copper shops, souvenirs, and the old bazaar lane by the bridge.</p>
+              </article>
+              <article class="sight-card" tabindex="0" role="button" aria-label="Open Koski Mehmed Pasha Mosque card">
+                <span class="sight-kicker" data-i18n="kicker3">Viewpoint</span>
+                <img class="sight-pin" src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260730_230448_825949c9-ccdb-4857-b4a6-e349eccc9010.png" alt="" />
+                <h3 data-i18n="title3">Koski Mehmed Pasha Mosque</h3>
+                <p data-i18n="desc3">A classic minaret view back toward Stari Most and the river.</p>
+              </article>
+              <article class="sight-card" tabindex="0" role="button" aria-label="Open Kajtaz House card">
+                <span class="sight-kicker" data-i18n="kicker4">Ottoman House</span>
+                <img class="sight-pin" src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260730_230438_d526b8b6-8a2e-4e3b-9993-3908acae03a7.png" alt="" />
+                <h3 data-i18n="title4">Kajtaz House</h3>
+                <p data-i18n="desc4">A preserved residential house showing Mostar's Ottoman layers.</p>
+              </article>
+              <article class="sight-card" tabindex="0" role="button" aria-label="Open War Photo Exhibition card">
+                <span class="sight-kicker" data-i18n="kicker5">Museum</span>
+                <img class="sight-pin" src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260730_230442_140bc25b-b165-4249-904a-f708bff6970e.png" alt="" />
+                <h3 data-i18n="title5">War Photo Exhibition</h3>
+                <p data-i18n="desc5">A compact, moving stop for context on the city's recent history.</p>
+              </article>
+            </div>
+          </section>
+
+          <img class="scene-img back-img back-bazaar" src="https://raft-blast-61784561.figma.site/_assets/v11/864afe00e41e2fa20a5aa546e15cb807e0f81384.png" alt="" />
+        </div>
+
+        <div class="sights-controls" aria-label="Slider controls">
+          <button class="sight-nav sight-prev" aria-label="Previous sight"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-left"/></svg></button>
+          <button class="sight-nav sight-next" aria-label="Next sight"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></button>
+        </div>
+
+        <h1 class="hero-title">MOSTAR</h1>
+
+        <img class="scene-img splitframe-img splitframe-left" src="https://raft-blast-61784561.figma.site/_assets/v11/7536d7b60a1fce482cf6edf3f0bffd3bad5d0f8a.png" alt="" />
+        <img class="scene-img splitframe-img splitframe-right" src="https://raft-blast-61784561.figma.site/_assets/v11/392db6a6a6b98e868bd7f8d3f55bb719d51e5028.png" alt="" />
+
+        <img class="scene-img bridge-img" src="https://raft-blast-61784561.figma.site/_assets/v11/c6a6d8ef49bca43f708aa852692942c45ec950d4.png" alt="" />
+
+        <img class="scene-img frame-two-img" src="https://raft-blast-61784561.figma.site/_assets/v11/ba75252bab2b1c510987b74837770f7bc8a6b2d4.png" alt="" />
+
+        <div class="shade"></div>
+      </div>
+
+      <section class="intro-copy" aria-label="Mostar overview">
+        <p data-i18n="intro">A stone arch, emerald water, and a compact old city made for slow mornings, late light, and one unforgettable crossing.</p>
+        <div class="hero-tags" aria-label="Mostar highlights">
+          <span data-i18n="tag1">Old Bridge</span>
+          <span data-i18n="tag2">Neretva River</span>
+          <span data-i18n="tag3">UNESCO old city</span>
+        </div>
+      </section>
+
+      <section class="story-panel story-panel-bridge" id="bridge" aria-label="Old Bridge details">
+        <h2 data-i18n="bridgeH">The bridge is the city's compass.</h2>
+        <p data-i18n="bridgeP">Stari Most links the banks of the Neretva and anchors a historic quarter shaped by Ottoman, Mediterranean, and European layers.</p>
+        <dl class="facts">
+          <div>
+            <dt>1566</dt>
+            <dd data-i18n="fact1">Original bridge completed</dd>
+          </div>
+          <div>
+            <dt>2005</dt>
+            <dd data-i18n="fact2">Old Bridge Area inscribed by UNESCO</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="story-panel story-panel-bazaar" id="bazaar" aria-label="Old town details">
+        <h2 data-i18n="bazaarH">The bazaar keeps Mostar close.</h2>
+        <p data-i18n="bazaarP">Stone lanes, mosque courtyards, copper stalls, and riverside coffee stay within a short walk of Stari Most.</p>
+        <button class="note-button" id="noteButton">
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg>
+          <span data-i18n="noteBtn">Open old town notes</span>
+        </button>
+      </section>
+    </div>
+  </section>
+
+  <!-- Routes section (makes the Routes nav link operational) -->
+  <section class="routes-section" id="routes" aria-label="Suggested walking routes">
+    <p class="routes-eyebrow" data-i18n="routesEyebrow">Keep walking</p>
+    <h2 class="routes-title" data-i18n="routesTitle">Three routes on foot</h2>
+    <p class="routes-sub" data-i18n="routesSub">Everything in Mostar's old core is reachable in under twenty minutes on foot — pick a loop and go slow.</p>
+    <div class="routes-grid">
+      <article class="route-card">
+        <span class="route-icon"><svg class="icon" aria-hidden="true"><use href="#icon-landmark"/></svg></span>
+        <h3 data-i18n="route1T">Stari Most loop</h3>
+        <p class="route-meta" data-i18n="route1M">1.2 km · about 40 min</p>
+        <p data-i18n="route1D">Cross the bridge, descend to the Neretva banks, and climb to the mosque viewpoint for the classic photo.</p>
+      </article>
+      <article class="route-card">
+        <span class="route-icon"><svg class="icon" aria-hidden="true"><use href="#icon-store"/></svg></span>
+        <h3 data-i18n="route2T">Bazaar lanes</h3>
+        <p class="route-meta" data-i18n="route2M">0.8 km · about 30 min</p>
+        <p data-i18n="route2D">Kujundziluk and the stone lanes, with stops for copper craft, souvenirs, and riverside coffee.</p>
+      </article>
+      <article class="route-card">
+        <span class="route-icon"><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg></span>
+        <h3 data-i18n="route3T">History &amp; layers</h3>
+        <p class="route-meta" data-i18n="route3M">2.1 km · about 1h 15</p>
+        <p data-i18n="route3D">Includes Kajtaz House and the War Photo Exhibition for context on the city's recent past.</p>
+      </article>
+    </div>
+    <footer class="page-footer">
+      <span class="footer-pin"><svg class="icon icon-sm" aria-hidden="true"><use href="#icon-map-pin"/></svg></span>
+      <span data-i18n="footer">Mostar · Bosnia and Herzegovina — a cinematic scroll story</span>
+    </footer>
+  </section>
+</main>
+
+<!-- Modal for sight details + old town notes -->
+<div class="modal-backdrop" id="modalBackdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close dialog"><svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg></button>
+    <span class="modal-kicker" id="modalKicker"></span>
+    <h3 class="modal-title" id="modalTitle"></h3>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
